@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EFB36D45-C885-C248-E96D-08CF2BB1D8BC" name="T_TIPO_DOENCA">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:17:54 UTC</createdTime>
+<comment><![CDATA[Tipos de doenças por vetores e zoonoses.]]></comment>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_doenca" id="512819C7-7131-075A-6564-2EAA16719676">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:19:16 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_doenca" id="173FADEF-635E-D44F-D92B-028B6B5F2BF2">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:20:25 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A79BDF76-7428-334C-C64E-E25316E020E9" name="T_TIPO_DOENCA PK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:20:03 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>512819C7-7131-075A-6564-2EAA16719676</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

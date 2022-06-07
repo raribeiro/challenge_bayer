@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6EF0A65-CDE0-20E0-45AD-E1EDE230D408" name="T_REG_DOENCA">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<comment><![CDATA[Tabelas responsável por armazenar o número de doenças por data, tipo e região.]]></comment>
+<generatorID>4432335C-3036-B483-A7CC-88DFEFEDD8A5</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reg" id="255F8FE3-BA6D-A097-5B59-2E20B64C2ABB">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>D59F773A-3405-C89A-7118-73126A153F20</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_ocorrencia" id="1FF71D5A-E193-658A-784C-457E3F396F78">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>DA0E3163-C0A9-3972-5BDE-5F9FF68F3878</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs_not" id="10742479-DBF6-D537-CFCF-F45C0C36A1B9">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso de notificação 1]]></commentInRDBMS>
+<generatorID>E6582E17-9B92-703F-5AF9-E6D10EB395B1</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs_conf" id="F0BB7905-6188-E760-A9DA-E9C564FD4E3B">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso confirmado 1]]></commentInRDBMS>
+<generatorID>234F5F55-6266-278F-B70E-01B649CB9486</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_TIPO_DOENCA_id_doenca" id="9D022BE9-6FEA-467C-0FE1-4869F58D39FB">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>966E628F-1BCC-23D8-6556-8BC12E4D61C8</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E1DF132-F213-5C37-829F-F37D594AE63C" referredColumn="1EDE5F5F-D9BC-A985-5F81-F5B75E85FAAF"/>
+</associations>
+</Column>
+<Column name="T_NM_MUNI_id_municipio" id="7936BD77-F5A2-1569-CDE2-FF406E399284">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>85D41C9D-8AB9-95D0-120B-8219F7E97156</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7495C2C2-7593-B317-3008-A3F2BE0869DA" referredColumn="7954F7D4-FED4-74B7-72E9-49B9F9482E12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27BCFDD6-1A32-5C03-19E1-803CAAA1F1C6" name="T_REG_DOENCA_PK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>26FCA52E-9A06-3E93-F9F1-07BF258AFAEB</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="255F8FE3-BA6D-A097-5B59-2E20B64C2ABB"/>
+<colUsage columnID="9D022BE9-6FEA-467C-0FE1-4869F58D39FB"/>
+<colUsage columnID="7936BD77-F5A2-1569-CDE2-FF406E399284"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A734860-C103-836E-6AFF-E6961FFA6A8A" name="T_REG_DOENCA_T_TIPO_DOENCA_FK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>BBAA0E60-3344-1F6C-80DC-B7009FE5BC30</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D022BE9-6FEA-467C-0FE1-4869F58D39FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87665B40-09A1-C258-3A65-FD70A6F83836" name="T_REG_DOENCA_T_NM_MUNI_FK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>46F03FD0-540F-504D-E6A5-77F2CD809FE2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7936BD77-F5A2-1569-CDE2-FF406E399284"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

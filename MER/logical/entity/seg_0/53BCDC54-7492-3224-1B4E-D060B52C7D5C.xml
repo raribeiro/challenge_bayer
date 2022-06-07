@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="53BCDC54-7492-3224-1B4E-D060B52C7D5C" name="T_NM_MUNI">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:33:52 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_municipio" id="B19654FB-4F85-8555-E1EB-76ADDA1E1F4A">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:34:00 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_municipio" id="EE61832D-00B8-655E-4307-D536FE35646D">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:34:33 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado" id="13055833-2BB7-7A0F-AEA7-B31D4F25AD93">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:40:26 UTC</createdTime>
+<generatorID>8E14BEC8-D37E-95FD-2369-56C3E61105FB</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<referedAttribute>81C5CE5A-D9AD-E01B-70A6-7564A48BABE4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_regiao" id="D2306148-DA03-FC1F-B997-9D70AAF29D7A">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:46:06 UTC</createdTime>
+<generatorID>8E14BEC8-D37E-95FD-2369-56C3E61105FB</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<referedAttribute>0E5012AE-8D84-1E61-C4EF-668099DD6168</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="403E33EC-1831-8FC3-7BC7-AA9949A23C27" name="mn_registro PK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:34:29 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B19654FB-4F85-8555-E1EB-76ADDA1E1F4A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

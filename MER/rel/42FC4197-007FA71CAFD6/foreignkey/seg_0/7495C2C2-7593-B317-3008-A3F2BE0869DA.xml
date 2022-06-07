@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7495C2C2-7593-B317-3008-A3F2BE0869DA" containerWithKeyObject="D6EF0A65-CDE0-20E0-45AD-E1EDE230D408" localFKIndex="87665B40-09A1-C258-3A65-FD70A6F83836" name="T_REG_DOENCA_T_NM_MUNI_FK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<generatorID>46F03FD0-540F-504D-E6A5-77F2CD809FE2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<referredTableLongName>T_NM_MUNI</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>287C1E34-2AD1-B337-A489-E426348CD8B0</referredTableID>
+<keyObject>4408CE92-1423-C7F1-B76B-5A5D65B8E72F</keyObject>
+<referredKeyID>4408CE92-1423-C7F1-B76B-5A5D65B8E72F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_municipio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

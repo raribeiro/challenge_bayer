@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA155688-5F50-5CBF-DAB1-EFF8612AAF22" name="T_NM_REGIAO">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<generatorID>0C889398-F574-062A-FFFE-1BEB23869AD1</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_regiao" id="ED338F57-713F-2680-A4E8-1041848164A1">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<generatorID>E84AF576-EC83-B8A1-C774-D7D6D690159B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_regiao" id="982F4E9F-64C3-0E02-7454-57F19DB596A4">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<generatorID>9555735B-B516-8935-A2FA-82E591BADF3E</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="298CAE02-B81D-C077-6D7A-A03F2AC87DE1" name="T_NM_REGIAO_PK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<generatorID>60773D44-690A-9777-C6EB-53544A83847D</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED338F57-713F-2680-A4E8-1041848164A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4432335C-3036-B483-A7CC-88DFEFEDD8A5" name="T_REG_DOENCA">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:22:16 UTC</createdTime>
+<comment><![CDATA[Tabelas responsável por armazenar o número de doenças por data, tipo e região.]]></comment>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_reg" id="D59F773A-3405-C89A-7118-73126A153F20">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:23:18 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_ocorrencia" id="DA0E3163-C0A9-3972-5BDE-5F9FF68F3878">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:23:52 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cs_not" id="E6582E17-9B92-703F-5AF9-E6D10EB395B1">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:28:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso de notificação 1]]></commentInRDBMS>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cs_conf" id="234F5F55-6266-278F-B70E-01B649CB9486">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:31:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso confirmado 1]]></commentInRDBMS>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_doenca" id="966E628F-1BCC-23D8-6556-8BC12E4D61C8">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:38:46 UTC</createdTime>
+<generatorID>BBAA0E60-3344-1F6C-80DC-B7009FE5BC30</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<referedAttribute>512819C7-7131-075A-6564-2EAA16719676</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_municipio" id="85D41C9D-8AB9-95D0-120B-8219F7E97156">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:39:46 UTC</createdTime>
+<generatorID>46F03FD0-540F-504D-E6A5-77F2CD809FE2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<referedAttribute>B19654FB-4F85-8555-E1EB-76ADDA1E1F4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="26FCA52E-9A06-3E93-F9F1-07BF258AFAEB" name="T_REG_DOENCA PK">
+<createdBy>Rod</createdBy>
+<createdTime>2022-06-07 13:23:41 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="42FC4197-B3B8-5A3A-0C41-007FA71CAFD6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D59F773A-3405-C89A-7118-73126A153F20</attributeRef>
+<attributeRef>966E628F-1BCC-23D8-6556-8BC12E4D61C8</attributeRef>
+<attributeRef>85D41C9D-8AB9-95D0-120B-8219F7E97156</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
