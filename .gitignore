@@ -3,4 +3,4 @@
 **/*.git
 **/*.DS_Store
 /.metadata/
-/java_project/src/main/java/br/com/fiap/store/singleton/ConnectionManager.java
+/java_project/src/br/com/fiap/connection/ConnectionManager.java
