@@ -12,6 +12,25 @@ public class DoencaDAO {
 	private Connection conexao;
 	private ResultSet rs;
 	
+	public void registraDoenca(String dt_registro, int id_doenca, int id_municipio, int cs_not, int cs_conf) throws SQLException {
+
+		ConnectionManager connect = new ConnectionManager();
+		PreparedStatement stmt = null;
+		
+		try {
+			conexao = connect.connect();
+			
+			String sql = "INSERT INTO t_reg_doenca (id_reg, dt_ocorrencia, t_tipo_doenca_id_doenca, t_nm_muni_id_municipio, cs_not, cs_conf) VALUES (sq_reg.NEXTVAL, TO_DATE('" + dt_registro + "', 'DD/MM/YYYY'), "+ id_doenca +", "+ id_municipio +", "+ cs_not +", "+ cs_conf +")";
+			stmt = conexao.prepareStatement(sql);
+			rs = stmt.executeQuery();
+			
+		}finally {
+			connect.close();
+			System.out.println("A-ha! Registro inserido com sucesso!");
+		}
+		
+	}
+	
 	public void listaDoencaPorDataRegiao(int cd_regiao, int mes_inicial, int mes_final) throws SQLException {
 		rs = null;
 		ConnectionManager connect = new ConnectionManager();
@@ -30,7 +49,7 @@ public class DoencaDAO {
 			System.out.println("---------------------------------------------------------------------------------------------------------");
 			while(rs.next()) {
 				System.out.println(rs.getString("NM_DOENCA") + "	|" + rs.getString("DT_OCORRENCIA") + "	|" + rs.getString("CS_NOT") + "	|"
-						+ rs.getString("CS_CONF") + "	|" + rs.getString("NM_MUNICIPIO") + "	|	" + rs.getString("NM_ESTADO") + "	| "+ rs.getString("NM_REGIAO"));
+						+ rs.getString("CS_CONF") + "	|" + rs.getString("NM_MUNICIPIO") + "	|" + rs.getString("NM_ESTADO") + "	|"+ rs.getString("NM_REGIAO"));
 				casos++;
 			}
 			
@@ -41,7 +60,7 @@ public class DoencaDAO {
 		
 	}
 	
-	public void registraDoenca(String dt_registro, int id_doenca, int id_municipio, int cs_not, int nc_conf) throws SQLException {
+	public void listaDoencaTotal(int mes_inicial, int mes_final) throws SQLException {
 		rs = null;
 		ConnectionManager connect = new ConnectionManager();
 		PreparedStatement stmt = null;
@@ -49,14 +68,21 @@ public class DoencaDAO {
 		try {
 			conexao = connect.connect();
 			
-			String sql = "select * from t_nm_muni";
+			String sql = "SELECT d.nm_doenca, r.dt_ocorrencia, r.cs_not, r.cs_conf, m.nm_municipio, e.nm_estado, reg.nm_regiao FROM t_reg_doenca r JOIN t_nm_muni m ON m.id_municipio = r.t_nm_muni_id_municipio JOIN t_tipo_doenca d ON r.t_tipo_doenca_id_doenca = d.id_doenca JOIN t_nm_estado e ON e.id_estado = m.t_nm_estado_id_estado JOIN t_nm_regiao reg ON e.t_nm_regiao_id_regiao = reg.id_regiao WHERE r.dt_ocorrencia BETWEEN TO_DATE('"+ mes_inicial +"', 'MM') AND TO_DATE('"+ mes_final +"', 'MM')";
+
 			stmt = conexao.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			
+			int casos = 0;
+			System.out.println("Nome da Doença | Data da ocorrência | Notificação | Confirmação | Cidade | Estado | Região");
+			System.out.println("---------------------------------------------------------------------------------------------------------");
+			while(rs.next()) {
+				System.out.println(rs.getString("NM_DOENCA") + "	|" + rs.getString("DT_OCORRENCIA") + "	|" + rs.getString("CS_NOT") + "	|"
+						+ rs.getString("CS_CONF") + "	|" + rs.getString("NM_MUNICIPIO") + "	|" + rs.getString("NM_ESTADO") + "	|"+ rs.getString("NM_REGIAO"));
+				casos++;
+			}
 			
-			/*while(rs.next()) {
-				System.out.println(rs.getString("NM_DOENCA"));
-			}*/
+			System.out.println("\nTOTAL DE CASOS ENCONTRADOS>>>>> " + casos);
 		}finally {
 			connect.close();
 		}

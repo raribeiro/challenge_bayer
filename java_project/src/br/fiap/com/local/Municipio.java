@@ -6,7 +6,7 @@ public class Municipio extends Local{
 	
 	private int id_municipi;
 
-	public int getId_municipi() {
+	public int getId_municipio() {
 		return id_municipi;
 	}
 
