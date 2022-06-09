@@ -13,24 +13,28 @@ public class ConnectionManager {
 			// Registra o Driver
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
-			// Abre uma conex„o
+			// Abre uma conex√ß√£o
 			conexao = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "XXX",
 					"XXX");
+			
+			System.out.println("Conex√£o aberta!");
 
 			// Tratamento de erro
 		} catch (SQLException e) {
-			System.err.println("N„o foi possÌvel conectar no Banco de Dados");
+			System.err.println("N√£o foi poss√≠vel conectar no Banco de Dados");
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			System.err.println("O Driver JDBC n„o foi encontrado!");
+			System.err.println("O Driver JDBC n√£o foi encontrado!");
 			e.printStackTrace();
-		} finally {
-			try {
-				conexao.close();
-				System.out.println("fechado!");
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
+		}
+	}
+	
+	public void close() throws SQLException {
+		try {
+			conexao.close();
+			System.out.println("Conex√£o fechada!");
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 }
