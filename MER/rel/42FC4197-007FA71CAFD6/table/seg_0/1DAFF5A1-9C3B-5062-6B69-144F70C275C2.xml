@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="287C1E34-2AD1-B337-A489-E426348CD8B0" name="T_NM_MUNI">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1DAFF5A1-9C3B-5062-6B69-144F70C275C2" name="T_NM_MUNI">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>53BCDC54-7492-3224-1B4E-D060B52C7D5C</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_municipio" id="7954F7D4-FED4-74B7-72E9-49B9F9482E12">
+<Column name="id_municipio" id="B65931EA-0F41-2C98-D8B0-130CCC768F40">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>B19654FB-4F85-8555-E1EB-76ADDA1E1F4A</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nm_municipio" id="729DF45B-3D9B-B88F-2259-AE39E44FC1FC">
+<Column name="nm_municipio" id="A0A3719A-39B5-17A9-DA9C-089EF71373F1">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>EE61832D-00B8-655E-4307-D536FE35646D</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="T_NM_ESTADO_id_estado" id="7C4A0D5C-C4AA-F88C-7863-95F3C052809B">
+<Column name="T_NM_ESTADO_id_estado" id="097A8A7D-D299-50DB-204A-64F006C0F21E">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>13055833-2BB7-7A0F-AEA7-B31D4F25AD93</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,12 +43,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B59A0E20-F81A-B9AA-2C3E-07483B289795" referredColumn="007DA162-845C-3396-9988-6DB44FBA9275"/>
+<colAssociation fkAssociation="2E62CB32-3C0C-8BC8-CE06-4EBDE92C7923" referredColumn="F5F2050C-35A1-744A-E6D7-93CABC3CEDF0"/>
 </associations>
 </Column>
-<Column name="id_regiao" id="418A5AC9-00B8-188F-AEC8-E514B39B19C0">
+<Column name="T_NM_ESTADO_id_regiao" id="75AAF6E7-D6F8-8DA5-3C50-0B58312166CA">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>D2306148-DA03-FC1F-B997-9D70AAF29D7A</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -58,33 +58,33 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B59A0E20-F81A-B9AA-2C3E-07483B289795" referredColumn="26887FBF-8B7A-8811-501F-2EB05DF7D8E4"/>
+<colAssociation fkAssociation="2E62CB32-3C0C-8BC8-CE06-4EBDE92C7923" referredColumn="4145D696-7626-4CB1-D923-6573B7B88BC0"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="4408CE92-1423-C7F1-B76B-5A5D65B8E72F" name="T_NM_MUNI_PK">
+<ind_PK_UK id="9CF854A5-08F9-378E-64C1-1CF48880D263" name="T_NM_MUNI_PK">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>403E33EC-1831-8FC3-7BC7-AA9949A23C27</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7954F7D4-FED4-74B7-72E9-49B9F9482E12"/>
+<colUsage columnID="B65931EA-0F41-2C98-D8B0-130CCC768F40"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3E356CE2-A2B4-641B-D108-56C6F1AF2110" name="T_NM_MUNI_T_NM_ESTADO_FK">
+<ind_PK_UK id="D1707454-61F8-23EA-D69E-A863CBCBBF38" name="T_NM_MUNI_T_NM_ESTADO_FK">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>8E14BEC8-D37E-95FD-2369-56C3E61105FB</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7C4A0D5C-C4AA-F88C-7863-95F3C052809B"/>
-<colUsage columnID="418A5AC9-00B8-188F-AEC8-E514B39B19C0"/>
+<colUsage columnID="097A8A7D-D299-50DB-204A-64F006C0F21E"/>
+<colUsage columnID="75AAF6E7-D6F8-8DA5-3C50-0B58312166CA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

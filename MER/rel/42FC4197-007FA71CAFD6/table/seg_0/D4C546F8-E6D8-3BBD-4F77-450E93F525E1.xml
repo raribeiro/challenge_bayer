@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="492CFD06-858A-ACBF-E8E1-321BD1977CDD" name="T_NM_ESTADO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4C546F8-E6D8-3BBD-4F77-450E93F525E1" name="T_NM_ESTADO">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>CD623698-C592-5630-8069-DA32C7EE6AB1</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_estado" id="007DA162-845C-3396-9988-6DB44FBA9275">
+<Column name="id_estado" id="F5F2050C-35A1-744A-E6D7-93CABC3CEDF0">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>81C5CE5A-D9AD-E01B-70A6-7564A48BABE4</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nm_estado" id="ED593934-56CD-228D-0ECF-A351380FAFF2">
+<Column name="nm_estado" id="30CA5E8B-E25D-CAA1-90A8-B203F5DEBBBB">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>352C58B4-59E9-18AA-C5E9-F103B400F79A</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="T_NM_REGIAO_id_regiao" id="26887FBF-8B7A-8811-501F-2EB05DF7D8E4">
+<Column name="T_NM_REGIAO_id_regiao" id="4145D696-7626-4CB1-D923-6573B7B88BC0">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>0E5012AE-8D84-1E61-C4EF-668099DD6168</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,33 +43,33 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="AD6C5D28-092D-B1FA-473F-BA6BFEEDE381" referredColumn="ED338F57-713F-2680-A4E8-1041848164A1"/>
+<colAssociation fkAssociation="8CA8288F-3E47-AC3C-A650-643918722BDB" referredColumn="E5ACB18C-04D2-5505-2595-D7E653C3E05E"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A244C830-0803-C53D-F982-B4220D6AC0D5" name="T_NM_ESTADO_PK">
+<ind_PK_UK id="A3B8E092-39A7-7FEB-A43B-4A035CB6AE3C" name="T_NM_ESTADO_PK">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:42:09 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>097C1490-0643-39BC-648D-32121D35F1A9</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="007DA162-845C-3396-9988-6DB44FBA9275"/>
-<colUsage columnID="26887FBF-8B7A-8811-501F-2EB05DF7D8E4"/>
+<colUsage columnID="F5F2050C-35A1-744A-E6D7-93CABC3CEDF0"/>
+<colUsage columnID="4145D696-7626-4CB1-D923-6573B7B88BC0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="41FDBB5D-E63C-EB4F-3333-FFD73957E203" name="T_NM_ESTADO_T_NM_REGIAO_FK">
+<ind_PK_UK id="CAE9F939-B6C6-6B5C-4934-C72B21BBB88E" name="T_NM_ESTADO_T_NM_REGIAO_FK">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
 <generatorID>A0581B7A-1E4D-9061-C47E-E847A6CDC218</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="26887FBF-8B7A-8811-501F-2EB05DF7D8E4"/>
+<colUsage columnID="4145D696-7626-4CB1-D923-6573B7B88BC0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

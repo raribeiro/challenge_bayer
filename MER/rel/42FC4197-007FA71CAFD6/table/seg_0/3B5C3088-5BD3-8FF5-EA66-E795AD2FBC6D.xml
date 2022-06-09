@@ -1,17 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA155688-5F50-5CBF-DAB1-EFF8612AAF22" name="T_NM_REGIAO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B5C3088-5BD3-8FF5-EA66-E795AD2FBC6D" name="T_TIPO_DOENCA">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
-<generatorID>0C889398-F574-062A-FFFE-1BEB23869AD1</generatorID>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
+<comment><![CDATA[Tipos de doenças por vetores e zoonoses.]]></comment>
+<generatorID>EFB36D45-C885-C248-E96D-08CF2BB1D8BC</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_regiao" id="ED338F57-713F-2680-A4E8-1041848164A1">
+<Column name="id_doenca" id="D221B6BC-A1D8-2076-8245-1E9CD40D6D22">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
-<generatorID>E84AF576-EC83-B8A1-C774-D7D6D690159B</generatorID>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
+<generatorID>512819C7-7131-075A-6564-2EAA16719676</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,10 +20,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nm_regiao" id="982F4E9F-64C3-0E02-7454-57F19DB596A4">
+<Column name="nm_doenca" id="A7B8E25D-3C0A-1A27-4C5C-7F1C7DE055BD">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
-<generatorID>9555735B-B516-8935-A2FA-82E591BADF3E</generatorID>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
+<generatorID>173FADEF-635E-D44F-D92B-028B6B5F2BF2</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,16 +34,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="298CAE02-B81D-C077-6D7A-A03F2AC87DE1" name="T_NM_REGIAO_PK">
+<ind_PK_UK id="346E8B49-DB4B-C87B-2570-60EA8AFD025C" name="T_TIPO_DOENCA_PK">
 <createdBy>Rod</createdBy>
-<createdTime>2022-06-07 13:46:45 UTC</createdTime>
-<generatorID>60773D44-690A-9777-C6EB-53544A83847D</generatorID>
+<createdTime>2022-06-09 13:40:18 UTC</createdTime>
+<generatorID>A79BDF76-7428-334C-C64E-E25316E020E9</generatorID>
 <ownerDesignName>MER</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="ED338F57-713F-2680-A4E8-1041848164A1"/>
+<colUsage columnID="D221B6BC-A1D8-2076-8245-1E9CD40D6D22"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
