@@ -17,8 +17,11 @@ public class RegistroDoencaExecutavel extends Doenca {
 		
 		/*
 		 * Setando ID município estático
+		 * Possibilidades de município cadastrados:
+		 * 1 = Campinas
+		 * 2 = Jundiaí
+		 * 4 = Porto Alegre
 		 */
-		
 		Municipio muni = new Municipio();
 		muni.setId_municipio(4);
 		
@@ -39,6 +42,15 @@ public class RegistroDoencaExecutavel extends Doenca {
 		 */
 		DoencaDAO doenca = new DoencaDAO();
 		
+		
+		/*
+		 * Função responsável por fazer um novo registro de doença no banco de dados
+		 * @Param 1 -> Data da ocorrencia
+		 * @Param 2 -> ID da doença cadastrada no banco
+		 * @Param 3 -> ID do município cadastrado no banco
+		 * @Param 4 -> 1 para o caso de notificação e 0 caso seja uma caso confirmado
+		 * @Param 5 -> 1 para caso confirmado e 0 caso seja apenas uma notificação   
+		 */
 		//doenca.registraDoenca(dt_registro, doen.getId_doenca(), muni.getId_municipio(), cs_not, cs_conf);
 		
 		/*
@@ -46,7 +58,7 @@ public class RegistroDoencaExecutavel extends Doenca {
 		 * @param 2 -> mês inicial
 		 * @param 4 -> mês final
 		 */
-		//doenca.listaDoencaTotal(01, 12);
+		doenca.listaDoencaTotal(01, 12);
 		
 		/*
 		 * Função para listagem de dados cadastrados por região e período mensal
@@ -54,7 +66,7 @@ public class RegistroDoencaExecutavel extends Doenca {
 		 * @param 2 -> mês inicial
 		 * @param 4 -> mês final
 		 */
-		//doenca.listaDoencaPorDataRegiao(5, 01, 12);
+		//doenca.listaDoencaPorDataRegiao(4, 01, 12);
 
 	}
 	
