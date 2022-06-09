@@ -8,16 +8,16 @@ public class ConnectionManager {
 
 	private Connection conexao;
 
-	public void connect() {
+	public Connection connect() {
 		try {
 			// Registra o Driver
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
 			// Abre uma conexção
-			conexao = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "XXX",
-					"XXX");
+			conexao = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "XXXXX",
+					"XXXXX");
 			
-			System.out.println("Conexão aberta!");
+			//System.out.println("Conexão aberta!");
 
 			// Tratamento de erro
 		} catch (SQLException e) {
@@ -27,12 +27,13 @@ public class ConnectionManager {
 			System.err.println("O Driver JDBC não foi encontrado!");
 			e.printStackTrace();
 		}
+		return conexao;
 	}
 	
 	public void close() throws SQLException {
 		try {
 			conexao.close();
-			System.out.println("Conexão fechada!");
+			//System.out.println("Conexão fechada!");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

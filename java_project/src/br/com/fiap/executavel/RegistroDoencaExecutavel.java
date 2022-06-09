@@ -39,7 +39,7 @@ public class RegistroDoencaExecutavel extends Doenca {
 		 */
 		DoencaDAO doenca = new DoencaDAO();
 		
-		doenca.registraDoenca(dt_registro, doen.getId_doenca(), muni.getId_municipio(), cs_not, cs_conf);
+		//doenca.registraDoenca(dt_registro, doen.getId_doenca(), muni.getId_municipio(), cs_not, cs_conf);
 		
 		/*
 		 * Listagem completa de registros de doença com possibilidade de filtro por período
@@ -54,7 +54,7 @@ public class RegistroDoencaExecutavel extends Doenca {
 		 * @param 2 -> mês inicial
 		 * @param 4 -> mês final
 		 */
-		//doenca.listaDoencaPorDataRegiao(4, 01, 12);
+		//doenca.listaDoencaPorDataRegiao(5, 01, 12);
 
 	}
 	
